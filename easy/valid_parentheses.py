@@ -11,6 +11,8 @@ def isValid(s):
                 if not stack or stack.pop()!=pairs[i]: # Checks if the stack is empty or if the bracket that is popped matches the pair
                     isValid = False
                     break
+        if stack:
+                isValid = False
         return isValid #returns valid if all pairs are matched
 # To test the function
 testdata = input("Enter a string of Brackets: ")
