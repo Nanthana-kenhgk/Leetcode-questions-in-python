@@ -24,6 +24,7 @@ class Solution {
             left--;
             right++;
         }
+        //returns the palindrome
         return (s.substring(left+1,right));
     }
 }
